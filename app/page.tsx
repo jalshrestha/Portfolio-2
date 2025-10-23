@@ -218,13 +218,13 @@ export default function Portfolio() {
 
         <section className="mb-20 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-900">
           <a
-            href="/Jaljala_Resume.pdf"
+            href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/Jaljala_Resume.pdf' : '/Jaljala_Resume.pdf'}
             className="inline-flex items-center gap-2 text-base font-medium text-primary transition-colors hover:text-primary/80"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FileText className="h-5 w-5" />
-            Resume
+            View Resume
           </a>
         </section>
 
