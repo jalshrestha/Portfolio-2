@@ -36,12 +36,12 @@ export default function Portfolio() {
                 forecasting; scalable infrastructure via Docker and Supabase.
               </p>
               <a
-                href="#"
+                href="https://github.com/jalshrestha/Option-Oracle"
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Link to Project
+                Code
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
@@ -159,7 +159,20 @@ export default function Portfolio() {
             </li>
             <li>
               <a
-                href="#"
+                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/2025_ISCAP_LLM_course_design__Updated_.pdf' : '/2025_ISCAP_LLM_course_design__Updated_.pdf'}
+                className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+                <span>
+                  <span className="font-semibold">ISCAP 2025 Paper:</span> LLM Course Design Framework - Innovative approaches to integrating Large Language Models in educational curricula and course development methodologies.
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/blockchain.pdf' : '/blockchain.pdf'}
                 className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
                 target="_blank"
                 rel="noopener noreferrer"
