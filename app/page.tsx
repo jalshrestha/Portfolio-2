@@ -16,7 +16,7 @@ export default function Portfolio() {
 
         <section className="mb-20 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
           <p className="text-lg leading-relaxed text-muted-foreground text-pretty">
-            I'm Jaljala Shrestha Lama, a deeply ambitious and analytical Computer Science undergrad at Northern Kentucky
+            I'm Jaljala, a deeply ambitious and analytical Computer Science undergrad at Northern Kentucky
             University, driven by an unyielding blend of discipline, curiosity, and visionary foresight. I approach challenges as a researcher unraveling complexities, an engineer forging solutions, and a strategist charting paths to transformation—intensely pursuing knowledge in reinforcement learning and quantitative finance, always bridging theory to tangible impact. I've cultivated a profound resilience that fuels my quest for excellence, innovation, and meaningful change. Passionate about the frontiers of AI, machine learning, finance, and privacy—interwoven with philosophical inquiries into human potential and consciousness—I'm currently advancing NLP research for ethical LLM deployments, architecting multi-agent systems for dynamic applications in trading and exploration, and harmonizing personal evolution with aspirations in quantitative roles, encompassing holistic well-being through travel, fitness, and financial wisdom.
           </p>
         </section>
@@ -37,6 +37,21 @@ export default function Portfolio() {
               </p>
               <a
                 href="https://github.com/jalshrestha/Option-Oracle"
+                className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+            <div className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg">
+              <h3 className="mb-3 text-xl font-semibold text-foreground">Circus Escape</h3>
+              <p className="mb-4 text-base leading-relaxed text-muted-foreground">
+                Dark atmospheric text-based adventure game built with KorGE engine. Navigate through the mysterious "Time Enders Circus" with immersive story, inventory system, and branching dialogue choices.
+              </p>
+              <a
+                href="https://github.com/jalshrestha/Circus-Escape"
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -131,29 +146,15 @@ export default function Portfolio() {
           <ul className="space-y-4">
             <li>
               <a
-                href="#"
+                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/blockchain.pdf' : '/blockchain.pdf'}
                 className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="transition-transform group-hover:translate-x-1">→</span>
                 <span>
-                  <span className="font-semibold">MIPRO 2025 Paper:</span> Analyzing ChatGPT users and prompts for
-                  privacy vulnerabilities and safer LLM practices.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-                <span>
-                  <span className="font-semibold">ICETC Submission:</span> Semantic-novelty metric using multiple LLMs
-                  for automated review processes.
+                  <span className="font-semibold">Hybrid GNN + CodeBERT:</span> Architecture for detecting fraudulent
+                  Ethereum smart contracts.
                 </span>
               </a>
             </li>
@@ -172,15 +173,27 @@ export default function Portfolio() {
             </li>
             <li>
               <a
-                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/blockchain.pdf' : '/blockchain.pdf'}
+                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/2025_ChatGPT_ICETC_LLM_course_design-2.pdf' : '/2025_ChatGPT_ICETC_LLM_course_design-2.pdf'}
                 className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="transition-transform group-hover:translate-x-1">→</span>
                 <span>
-                  <span className="font-semibold">Hybrid GNN + CodeBERT:</span> Architecture for detecting fraudulent
-                  Ethereum smart contracts.
+                  <span className="font-semibold">ICETC Submission:</span> Semantic-novelty metric using multiple LLMs for automated review processes.
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={process.env.NODE_ENV === 'production' ? '/Portfolio-2/01_19979_cis-4.pdf' : '/01_19979_cis-4.pdf'}
+                className="group inline-flex items-start gap-2 text-base font-medium text-foreground transition-colors hover:text-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+                <span>
+                  <span className="font-semibold">MIPRO 2025 Paper:</span> Analyzing ChatGPT users and prompts for privacy vulnerabilities and safer LLM practices.
                 </span>
               </a>
             </li>
